@@ -1,3 +1,20 @@
+#### ERROR ####
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Sh1ro\bot\main.py", line 2, in <module>
+    import bot
+  File "C:\Users\User\PycharmProjects\Sh1ro\bot\bot.py", line 15, in <module>
+    async def cmd_start(message: types.Message):
+  File "D:\python\sstt\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 563, in decorator
+    self.register_message_handler(callback, *custom_filters,
+  File "D:\python\sstt\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 482, in register_message_handler
+    filters_set = self.filters_factory.resolve(self.message_handlers,
+  File "D:\python\sstt\.venv\lib\site-packages\aiogram\dispatcher\filters\factory.py", line 51, in resolve
+    filters_set = list(
+  File "D:\python\sstt\.venv\lib\site-packages\aiogram\dispatcher\filters\factory.py", line 77, in _resolve_registered
+    raise NameError("Invalid filter name(s): '" + "', ".join(full_config.keys()) + "'")
+NameError: Invalid filter name(s): 'access_filter'
+
+
 #### MAIN.PY ####
 from aiogram import executor
 import bot
